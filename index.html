@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>CSS Animations</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Refresh" content="5; url=https://www.w3schools.com">
+        <style>
+            body{
+                background-color: #9bb8e8;
+                -webkit-animation-name: background; /* Safari 4.0 - 8.0 */
+                -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+                animation-name: background;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+
+            /* Safari 4.0 - 8.0 */
+            @-webkit-keyframes background {
+                0%   {background-color:#8cdd77;}
+                25%  {background-color: #9bb8e8;}
+                50%  {background-color: #9e75c6;}
+                75% {background-color:#aa2592; }
+                100% {background-color: #8cdd77;}
+            }
+
+            /* Standard syntax */
+            @keyframes background{
+                0%   {background-color:#8cdd77;}
+                25%  {background-color: #9bb8e8;}
+                50%  {background-color: #9e75c6;}
+                75% {background-color:#aa2592; }
+                100% {background-color: #8cdd77;}
+            }
+            div {
+                margin: auto;
+                width: 50%;
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                -webkit-animation-name: box1; /* Safari 4.0 - 8.0 */
+                -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                animation-name: box1;
+                animation-duration: 4s;
+                animation-delay: 1s;
+                -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+                transition: width 2s, height 2s, transform 2s;
+                animation-iteration-count: infinite;
+                border: 3px solid green;
+            }
+
+            /* Safari 4.0 - 8.0 */
+            @-webkit-keyframes box1 {
+                0%   {background-color: #9bb8e8;}
+                25%  {background-color: #9e75c6;}
+                50%  {background-color: #aa2592;}
+                75%  {background-color: #8cdd77;}
+                100% {background-color: #9bb8e8;}
+            }
+
+            /* Standard syntax */
+            @keyframes box1{
+                0%   {background-color: #9bb8e8;}
+                25%  {background-color: #9e75c6;}
+                50%  {background-color: #aa2592;}
+                75%  {background-color: #8cdd77;}
+                100% {background-color: #9bb8e8;}
+            }
+            div:hover {
+                width: 300px;
+                height: 300px;
+                -webkit-transform: rotate(180deg); /* Safari */
+                transform: rotate(180deg);
+            }
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <h1>Changing Colors with CSS</h1>
+        <p>You will be redirected to the new address in five seconds.</p>
+        <br>
+        <br>
+        <div></div>
+
+    </body>
+</html>
